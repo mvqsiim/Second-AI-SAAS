@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faceless PlayBook | AI Command Center for Creators</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-background" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="logo-group">
+        <div class="avatar-ring">
+          <div class="avatar"></div>
+        </div>
+        <div>
+          <p class="brand-label">CreatorCashX presents</p>
+          <h1 class="brand-name">Faceless PlayBook</h1>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#features">Features</a>
+        <a href="#dashboard">AI Command Center</a>
+        <a href="#pricing">Membership</a>
+      </nav>
+      <div class="cta-group">
+        <button class="btn ghost">Log in</button>
+        <button class="btn primary">Get Access</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="mission">
+        <div class="hero-content">
+          <span class="badge">+274M views decoded</span>
+          <h2>
+            Turn your faceless channel into a revenue engine with an AI mentor
+            trained on Creator Cash's exact playbook.
+          </h2>
+          <p>
+            Faceless PlayBook gives you a modern command center to plan, script,
+            and optimize long-form content that grips viewers from hook to CTA.
+            Built for creators who want retention-first narratives without
+            spending hours writing.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary">Launch the dashboard</button>
+            <button class="btn ghost">See how it works</button>
+          </div>
+          <dl class="hero-metrics">
+            <div>
+              <dt>Average Watch Time Lift</dt>
+              <dd>+38%</dd>
+            </div>
+            <div>
+              <dt>Scripts Generated</dt>
+              <dd>12,400+</dd>
+            </div>
+            <div>
+              <dt>Creator Community</dt>
+              <dd>Skool verified</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual">
+          <div class="radial"></div>
+          <div class="hero-card">
+            <header>
+              <div>
+                <p class="card-label">Active Workflow</p>
+                <h3>Long-form Retention Blueprint</h3>
+              </div>
+              <span class="status-pill">Live</span>
+            </header>
+            <ul>
+              <li>
+                <span class="label">Niche signal</span>
+                <span class="value">Finance automation</span>
+              </li>
+              <li>
+                <span class="label">Video length</span>
+                <span class="value">12:30</span>
+              </li>
+              <li>
+                <span class="label">Retention target</span>
+                <span class="value">65%+</span>
+              </li>
+            </ul>
+            <footer>
+              <p>AI ready to generate beats, hooks &amp; storytelling turns.</p>
+            </footer>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid" id="features">
+        <article>
+          <h3>Retention First</h3>
+          <p>
+            Every script is mapped with second-by-second tension curves, pattern
+            interrupts, and cinematic pacing to secure binge-level watch time.
+          </p>
+        </article>
+        <article>
+          <h3>Faceless Templates</h3>
+          <p>
+            Choose frameworks proven across Creator Cash's automation empire:
+            documentary breakdowns, cash machine case studies, or trend hijacks.
+          </p>
+        </article>
+        <article>
+          <h3>Hook Engine</h3>
+          <p>
+            Instantly generate five punchy hook options tuned to your niche and
+            promise, each vetted against millions of viral openings.
+          </p>
+        </article>
+        <article>
+          <h3>Monetization Stack</h3>
+          <p>
+            Layer in sponsorship beats, product pushes, and retention-safe CTAs
+            that feel native to your story arc.
+          </p>
+        </article>
+      </section>
+
+      <section class="dashboard" id="dashboard">
+        <header>
+          <h2>AI Command Center</h2>
+          <p>
+            Dial in your prompt, review data-driven suggestions, and chat with
+            an AI trained on Creator Cash's archives to refine every segment.
+          </p>
+        </header>
+        <div class="dashboard-grid">
+          <aside class="control-panel">
+            <h3>Project Brief</h3>
+            <form id="brief-form">
+              <label>
+                Video Topic
+                <input
+                  type="text"
+                  name="topic"
+                  placeholder="How to build a $10K/mo faceless finance channel"
+                  required
+                />
+              </label>
+              <label>
+                Core Promise
+                <input
+                  type="text"
+                  name="promise"
+                  placeholder="Blueprint reveals the systems behind consistent $1K days"
+                  required
+                />
+              </label>
+              <label>
+                Target Viewer Persona
+                <input
+                  type="text"
+                  name="persona"
+                  placeholder="Busy solopreneur juggling agency work"
+                  required
+                />
+              </label>
+              <label>
+                Desired Video Length (minutes)
+                <input
+                  type="number"
+                  name="length"
+                  min="5"
+                  max="45"
+                  value="12"
+                  required
+                />
+              </label>
+              <label>
+                Retention Goal (%)
+                <input
+                  type="number"
+                  name="retention"
+                  min="40"
+                  max="95"
+                  value="70"
+                  required
+                />
+              </label>
+              <button type="submit" class="btn primary">
+                Generate Script Blueprint
+              </button>
+            </form>
+            <div class="hook-options" id="hook-options">
+              <h4>Hook Options</h4>
+              <ul></ul>
+            </div>
+          </aside>
+          <section class="workspace">
+            <div class="chat-panel">
+              <header>
+                <div>
+                  <p class="card-label">Creator Cash AI</p>
+                  <h3>Mentor Chat</h3>
+                </div>
+                <span class="status-dot"></span>
+              </header>
+              <div class="chat-log" id="chat-log"></div>
+              <form id="chat-form">
+                <input
+                  type="text"
+                  id="chat-input"
+                  placeholder="Ask how to increase retention in the climax..."
+                  autocomplete="off"
+                  required
+                />
+                <button type="submit" class="btn primary">Send</button>
+              </form>
+            </div>
+            <div class="script-output">
+              <header>
+                <div>
+                  <p class="card-label">Script Composer</p>
+                  <h3>High-Retention Draft</h3>
+                </div>
+                <button id="copy-script" class="btn ghost">Copy Script</button>
+              </header>
+              <article id="script-content" class="script-content">
+                <p class="placeholder">
+                  Submit a brief to receive a detailed, chaptered script optimized
+                  for long-form engagement.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="social-proof">
+        <div class="testimonial">
+          <p>
+            "Faceless PlayBook is the closest thing to having Creator Cash in your
+            Slack. The AI immediately refines our B-roll cues and CTA placement."
+          </p>
+          <div class="author">
+            <span class="author-avatar"></span>
+            <div>
+              <h4>Nova Media Labs</h4>
+              <p>12M+ monthly impressions</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>
+            "We cut our scripting time by 80% and raised average watch time to 68%.
+            The hook generator alone paid for the membership."
+          </p>
+          <div class="author">
+            <span class="author-avatar"></span>
+            <div>
+              <h4>Atlas Automation</h4>
+              <p>7-figure channel portfolio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <header>
+          <h2>Join the Faceless PlayBook Membership</h2>
+          <p>
+            One membership unlocks the AI command center, weekly live breakdowns,
+            and community access inside Skool.
+          </p>
+        </header>
+        <div class="pricing-card">
+          <div>
+            <p class="card-label">Monthly Access</p>
+            <h3>$97</h3>
+            <ul>
+              <li>Unlimited script generation</li>
+              <li>Creator Cash retention prompts</li>
+              <li>Hook vault updated weekly</li>
+              <li>Skool community accountability</li>
+            </ul>
+          </div>
+          <button class="btn primary">Secure Your Seat</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <div class="logo-group">
+          <div class="avatar-ring small">
+            <div class="avatar"></div>
+          </div>
+          <h3>Creator Cash</h3>
+        </div>
+        <p>
+          Building the next wave of faceless cash machines with automation,
+          narrative science, and AI superpowers.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://x.com/CreatorCashX" target="_blank" rel="noreferrer"
+          >X / Twitter</a
+        >
+        <a href="https://skool.com/faceless-playbook" target="_blank" rel="noreferrer"
+          >Skool Community</a
+        >
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
